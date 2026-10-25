@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot - Campus Placement",
+      "request": "launch",
+      "mainClass": "com.college.placement.PlacementApplication",
+      "projectName": "student-placement-management-system",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev",
+        "INITIAL_ADMIN_EMAIL": "officer@driems.ac.in",
+        "INITIAL_ADMIN_PASSWORD": "${input:adminPassword}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "adminPassword",
+      "type": "promptString",
+      "description": "Choose initial placement officer password",
+      "password": true
+    }
+  ]
+}
